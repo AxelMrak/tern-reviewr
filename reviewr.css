@@ -1,0 +1,122 @@
+/* Tern Reviewr: square terminal panes using the active Tern theme. */
+.sf-region[data-surface='plugin.tern-reviewr.review'] {
+	--review-bg: var(--tv-bg);
+	--review-panel: var(--code-bg);
+	--review-fg: var(--tv-fg);
+	--review-muted: var(--t3);
+	--review-line: var(--l2);
+	--review-accent: var(--accent);
+	--review-success: var(--ok);
+	--review-error: var(--bad);
+	--sf-c-muted: var(--t3);
+	--sf-c-accent: var(--accent-ink);
+	--sf-c-info: var(--accent-ink);
+	--sf-c-success: var(--ok);
+	--sf-c-warning: var(--warn);
+	--sf-c-error: var(--bad);
+	--sf-c-path: var(--t1);
+	--sf-mark-bg: rgb(from var(--accent) r g b / 18%);
+	--sf-sel: var(--tv-sel);
+}
+
+.sf-main[data-surface='plugin.tern-reviewr.review'] {
+	background-color: var(--review-bg);
+	color: var(--review-fg);
+	font-family: var(--tv-font, ui-monospace, monospace);
+}
+
+.sf-dock[data-surface='plugin.tern-reviewr.review'] {
+	background-color: var(--review-bg);
+	border-top: 1px solid var(--review-line);
+	color: var(--review-muted);
+}
+
+.sf-layer[data-surface='plugin.tern-reviewr.review'] {
+	color: var(--review-fg);
+}
+
+.sf-main[data-surface='plugin.tern-reviewr.review'] > [data-id='main.0'] {
+	border-bottom: 1px solid var(--review-line);
+	padding-bottom: 4px;
+	flex-wrap: wrap;
+}
+
+.sf-main[data-surface='plugin.tern-reviewr.review'] [data-role='plugin.tern-reviewr.summary'] {
+	border-bottom: 1px solid var(--review-line);
+	padding-bottom: 2px;
+}
+
+.sf-main[data-surface='plugin.tern-reviewr.review'] [data-role='plugin.tern-reviewr.comment-preview'] {
+	border-left: 1px solid var(--review-accent);
+	padding-left: 4px;
+}
+
+.sf-main[data-surface='plugin.tern-reviewr.review'] [data-role='plugin.tern-reviewr.panel'] {
+	border: 1px solid var(--review-line);
+	padding: 3px;
+}
+
+.sf-main[data-surface='plugin.tern-reviewr.review'] [data-role='plugin.tern-reviewr.focused'] {
+	border: 1px solid var(--review-accent);
+	padding: 3px;
+}
+
+.sf-main[data-surface='plugin.tern-reviewr.review'] .sf-list {
+	background-color: var(--review-panel);
+	border: 1px solid var(--review-line);
+	border-radius: 0;
+}
+
+.sf-main[data-surface='plugin.tern-reviewr.review'] .sf-item {
+	color: var(--review-fg);
+}
+
+.sf-main[data-surface='plugin.tern-reviewr.review'] .sf-item.sel {
+	background-color: var(--sf-sel);
+	box-shadow: inset 3px 0 0 var(--review-accent);
+	color: var(--review-fg);
+}
+
+.sf-main[data-surface='plugin.tern-reviewr.review'] .sf-item[data-tone='success'] .sf-item-label,
+.sf-main[data-surface='plugin.tern-reviewr.review'] .sf-t-success {
+	color: var(--review-success);
+}
+
+.sf-main[data-surface='plugin.tern-reviewr.review'] .sf-item[data-tone='error'] .sf-item-label,
+.sf-main[data-surface='plugin.tern-reviewr.review'] .sf-t-error {
+	color: var(--review-error);
+}
+
+.sf-main[data-surface='plugin.tern-reviewr.review'] .sf-t-mark {
+	background-color: var(--sf-mark-bg);
+	color: var(--t1);
+}
+
+.sf-main[data-surface='plugin.tern-reviewr.review'] .sf-badge {
+	background-color: var(--review-panel);
+	border: 1px solid var(--review-line);
+	border-radius: 0;
+	color: var(--review-fg);
+}
+
+.sf-layer[data-surface='plugin.tern-reviewr.review'] .sf-ov-card {
+	background-color: var(--pop-bg) !important;
+	border: 1px solid var(--review-accent);
+	border-radius: 0;
+	color: var(--t1) !important;
+}
+
+.sf-layer[data-surface='plugin.tern-reviewr.review'] .sf-ov-dim {
+	background-color: var(--dim);
+}
+
+.sf-layer[data-surface='plugin.tern-reviewr.review'] .sf-ov-card .sf-ov-title,
+.sf-layer[data-surface='plugin.tern-reviewr.review'] .sf-ov-card .sf-t-strong,
+.sf-layer[data-surface='plugin.tern-reviewr.review'] .sf-ov-card .sf-t-code {
+	color: var(--t1) !important;
+}
+
+.sf-layer[data-surface='plugin.tern-reviewr.review'] .sf-ov-card .sf-t-muted {
+	color: var(--t3) !important;
+}
+

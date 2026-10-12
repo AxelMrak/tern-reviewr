@@ -1,0 +1,14 @@
+schema = 1
+id = "tern-reviewr"
+name = "Tern Reviewr"
+version = "0.1.0"
+description = "Review uncommitted changes and send anchored comments to a Tern agent."
+icon = "git-branch"
+host = "host.luau"
+window = "window.luau"
+styles = ["reviewr.css"]
+
+[[blocks]]
+id = "review"
+title = "Review uncommitted changes"
+icon = "git-branch"
